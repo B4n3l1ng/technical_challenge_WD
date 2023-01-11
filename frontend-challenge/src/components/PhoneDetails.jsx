@@ -13,7 +13,7 @@ function PhoneDetails() {
             setDetails(result.data);
             setIsLoading(false)
         })
-    })
+    }, [])
     return ( <>
     {isLoading ? (<div>Loading...</div>) : (
     <><h1>Details:</h1>
